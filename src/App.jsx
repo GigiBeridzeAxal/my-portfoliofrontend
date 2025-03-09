@@ -11,7 +11,7 @@ import Reviews from './components/Reviews'
 import Contact from './components/Contact'
 import Hireme from './components/Hireme'
 import WorkExperience from './components/WorkExperience'
-import Copyright from './components/copyright'
+import Copyright from './components/Copyright'
 
 function App() {
 
