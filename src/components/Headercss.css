@@ -1,0 +1,31 @@
+header{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.144);
+    letter-spacing: 1px;
+}
+.items{
+    border: 1px solid rgba(85, 85, 85, 0.363);
+}
+.line{
+    position: relative;
+}
+.line::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: rgb(24, 112, 245);
+    bottom: 0px;
+    left: -5px;
+    border-radius: 3px;
+  
+}
+.anim1{
+
+    filter: blur(30px);
+    box-shadow: 0px 0px 125px 53px rgb(112, 96, 255);
+    width: 210px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 33%;
+
+}

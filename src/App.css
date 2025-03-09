@@ -1,0 +1,187 @@
+@import "tailwindcss";
+
+
+*{
+    letter-spacing: 1px;
+}
+body{
+    overflow-x: hidden;
+}
+.explore{
+       
+    background: linear-gradient(180deg , #0d0150 , #32209b);
+}
+.skillbox{
+    background: linear-gradient(30deg , #2a174d67 , #463c7c70);
+}
+.borderlight{
+    border: 1px solid rgba(165, 127, 255, 0.562);
+
+}
+
+.colorforemailcopy{
+    background: linear-gradient(30deg, rgba(76, 0, 130, 0.582), rgba(117, 2, 199, 0.616));
+
+}
+.hovervisit{
+    position: relative;
+}
+.hovervisit{
+    border: 1px solid rgba(117, 2, 199, 0.473) ;
+    
+}
+.visit{
+    left: calc(50% - 35px);
+    top: -45px;
+}
+.reviewbox{
+    word-wrap: break-word;
+}
+video{
+    transform: rotate(180deg);
+}
+
+.marqueblur{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    width: 1px;
+    height: 300px;
+    box-shadow: 0px 0px 45px 20px rgb(20, 20, 20);
+    
+
+}
+.marqueblurright{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+    width: 1px;
+    height: 300px;
+    box-shadow: 0px 0px 155px 50px rgb(49, 49, 49);
+}
+.custommarque{
+    mask-image: linear-gradient(to right , transparent,  #000 10% 90% , transparent);
+    width: calc(320px * 6);
+    overflow-x: hidden;
+}
+.reviewbox{
+    animation: marque 10s linear infinite;
+    animation-delay: calc( (10s / 6) *  ( 6 - var(--position) * -1));
+    position: absolute;
+
+    
+   left: -500px;
+}
+
+
+
+.contactsendbtn{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: rgb(6, 15, 56);
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    border: 5px solid rgba(128, 128, 128, 0);
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.171);
+
+}
+canvas{
+    width: 500px !important;
+    height: 500px !important;
+}
+.fullstackdeveloper{
+    background: linear-gradient(30deg , #0d01506c , #27139b75);
+    padding: 10px;
+    border-radius: 15px;
+}
+.rainbow{
+    backdrop-filter: blur(30px);
+    position: relative;
+    z-index: 15 !important;
+    backdrop-filter: blur(50px);
+
+    overflow: hidden;
+
+}
+.rainbow::after{
+    content: '';
+    position: absolute;
+    width: 250px;
+    left: 0;
+    top: 0;
+    height: 250%;
+    mix-blend-mode: overlay;
+    background-color: transparent;
+
+    z-index: -3 !important;
+    animation: rotate 5s infinite linear;
+}
+.livepreview{
+    background: linear-gradient(30deg , #09032c , #052874);
+    border-radius: 5px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    z-index: 15;
+    border: 2px solid transparent;
+
+}
+.rotateanimation{
+    width: 25px;
+    height:360px;
+    background-color: white;
+     z-index: -1;
+    left: 50%;
+    top: -50%;
+    animation: rotate 5s infinite linear;
+    
+}
+.custombtn{
+    position: relative;
+    width: fit-content;
+  
+    padding: 2px;
+
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+
+@media (max-width:700px) {
+    canvas{
+        width: 450px !important;
+        height: 450px !important;
+    }
+}
+
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes marque {
+
+    from{
+       left: -300px;
+    }
+    to{
+        left: 120%;
+    }
+    
+}
+
