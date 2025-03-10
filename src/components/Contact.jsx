@@ -1,5 +1,5 @@
 import { Mail, MessageCircle, Phone, Send, User } from 'lucide-react'
-import React , {Suspense, useRef} from 'react'
+import React , {Suspense, useRef, useState} from 'react'
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import axios from 'axios';
@@ -11,9 +11,11 @@ const backend = import.meta.env.VITE_APP_BACKEND
 
 export default function Contact() {
     const formref = useRef()
+    const [cansendmessage , setcansendmessage] = useState(true)
     
     const sendmessage = async(e) => {
         e.preventDefault();
+        setcansendmessage(false)
 
         console.log(formref.current[0].value)
         const fullname = formref.current[0].value
@@ -95,7 +97,7 @@ const hashPassword = async (password) => {
 
  
         
-         <form onSubmit={(e) => sendmessage(e)} ref={formref} className='mt-[50px] sm:w-[600px] w-[100%] flex flex-col gap-[25px]' >
+         <form onSubmit={(e) => cansendmessage ? sendmessage(e) : null} ref={formref} className='mt-[50px] sm:w-[600px] w-[100%] flex flex-col gap-[25px]' >
          <h1  className='text-[24px] text-teal-200  font-[900]'>Contact Form</h1>
             <div className="input flex w-[100%] items-center justify-center gap-[10px] bg-slate-800 p-[10px]">
                 <User></User>
@@ -122,7 +124,7 @@ const hashPassword = async (password) => {
 
             </div>
 
-            <button className='text-white cursor-pointer contactsendbtn p-[10px]'>Send <Send></Send></button>
+            <button  className='text-white cursor-pointer contactsendbtn p-[10px]'>Send <Send></Send></button>
 
 
 
