@@ -12,6 +12,7 @@ import Contact from './components/Contact'
 import Hireme from './components/Hireme'
 import WorkExperience from './components/WorkExperience'
 import Copyright from './components/Copyright'
+import CodingManner from './components/CodingManner'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
     <Header></Header>
     <BlackHole></BlackHole>
     <Main></Main>
+    <CodingManner></CodingManner>
     <Projects></Projects>
     <WorkExperience></WorkExperience>
     <Skills></Skills>

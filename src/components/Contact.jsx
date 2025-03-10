@@ -4,6 +4,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import axios from 'axios';
 import bcrypt from 'bcryptjs';
+import { toast } from 'react-toastify';
 
 const secretkey = import.meta.env.VITE_APP_SECRETKEY
 const backend = import.meta.env.VITE_APP_BACKEND
@@ -30,6 +31,10 @@ const hashPassword = async (password) => {
 
 
         const send = await axios.post(backend, {fullname , email , phone ,message , hashed:hashedsecret})
+
+        if(send){
+            toast.success("You Succesfully Send Message")
+        }
          
         
 
