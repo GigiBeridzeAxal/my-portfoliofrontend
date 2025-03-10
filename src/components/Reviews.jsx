@@ -67,7 +67,7 @@ export default function Reviews() {
 
 
   return (
-    <div id='reviews' className="reviews flex-col justify-center items-center w-[100%] mt-[240px] flex items-center 
+    <div id='reviews' className="reviews overflow-hidden flex-col justify-center items-center w-[100%] mt-[240px] flex items-center 
     justify-center">
 
 

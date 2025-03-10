@@ -57,7 +57,7 @@ const hashPassword = async (password) => {
     
     <div className="contactframe w-[80%] flex-wrap text-white flex  w-[80%] items-center 2xl:justify-between justify-center">
 
-        <div className="leftside ">
+        <div className="leftsidew  ">
         <h1>Gigi Beridze: <span className='text-indigo-400 font-[900] w-[320px]'> 3d Web Developer</span></h1>
 
          <h1 className=' text-[24px] font-[900]'>Contact me to discuss any suggestions</h1>
