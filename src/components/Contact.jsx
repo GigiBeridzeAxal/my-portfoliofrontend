@@ -30,10 +30,16 @@ const hashPassword = async (password) => {
   const hashedsecret = await hashPassword(secretkey)
 
 
+
+
         const send = await axios.post(backend, {fullname , email , phone ,message , hashed:hashedsecret})
 
         if(send){
             toast.success("You Succesfully Send Message")
+            setTimeout(() => {
+                window.location = '/'
+                
+            }, 2500);
         }
          
         
