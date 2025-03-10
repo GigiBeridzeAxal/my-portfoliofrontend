@@ -97,7 +97,7 @@ const hashPassword = async (password) => {
 
  
         
-         <form onSubmit={(e) => cansendmessage ? sendmessage(e) : null} ref={formref} className='mt-[50px] sm:w-[600px] w-[100%] flex flex-col gap-[25px]' >
+         <form onSubmit={(e) => cansendmessage ? sendmessage(e) : e.preventDefault() | null} ref={formref} className='mt-[50px] sm:w-[600px] w-[100%] flex flex-col gap-[25px]' >
          <h1  className='text-[24px] text-teal-200  font-[900]'>Contact Form</h1>
             <div className="input flex w-[100%] items-center justify-center gap-[10px] bg-slate-800 p-[10px]">
                 <User></User>
