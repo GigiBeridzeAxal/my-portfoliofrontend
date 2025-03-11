@@ -47,10 +47,10 @@ export default function Header() {
 
            <div className='text-white w-[370px] justify-center p-[10px] hidden sm:flex flex gap-[25px] p-[10px] bg-white/10 rounded-[50px] backdrop-blur-[150px] '>
 
-            <motion.a  href='#projects' whileHover={{color:'oklch(0.585 0.233 277.117)'}} className='cursor-pointer rounded-[50px] '>Projects</motion.a>
-            <motion.a href='#experience' className='cursor-pointer rounded-[50px] '>Experience</motion.a>
-            <motion.a href='#reviews' className='cursor-pointer rounded-[50px]  '>Reviews</motion.a>
-            <motion.a href='#contact' className=''>Contact</motion.a>
+            <motion.a  href='#projects' whileHover={{color:'oklch(0.707 0.165 254.624)'}} className='cursor-pointer rounded-[50px] '>Projects</motion.a>
+            <motion.a whileHover={{color:'oklch(0.707 0.165 254.624)'}}  href='#experience' className='cursor-pointer rounded-[50px] '>Experience</motion.a>
+            <motion.a whileHover={{color:'oklch(0.707 0.165 254.624)'}}  href='#reviews' className='cursor-pointer rounded-[50px]  '>Reviews</motion.a>
+            <motion.a whileHover={{color:'oklch(0.707 0.165 254.624)'}} href='#contact' className=''>Contact</motion.a>
  
 
 
