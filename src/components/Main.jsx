@@ -12,7 +12,7 @@ export default function Main() {
             <motion.h1  transition={{duration:0.8}} initial={{opacity:0  ,  x:-50}} whileInView={{opacity:1 , y:0 , x:0}} className='text-[26px] w-[100%] text-center lg:text-start w-[100%] lg:text-[70px] sm:text-[30px] sm:w-[100%]  sm:w-[100%]   sm:text-center '>Gigi Beridze: <span className='text-indigo-500'>Fullstack Developer</span></motion.h1>
 
             
-            <motion.h3 initial={{opacity:0  , y:50 ,  x:-50}} whileInView={{opacity:1 , y:0 , x:0}}  className='w-[100%] text-center  lg:w-[600px] sm:text-center lg:text-start  md:text-[24px] sm:[18px]'>Hello I am Gigi I have 5 years of experience in programming and 3 years of experience in Fullestak Development You can check my projects and have work experience as well.</motion.h3>
+            <motion.h3 initial={{opacity:0  , y:50 ,  x:-50}} whileInView={{opacity:1 , y:0 , x:0}}  className='w-[100%] text-center  lg:w-[600px] sm:text-center lg:text-start  md:text-[24px] sm:[18px]'>Hello I am Gigi I have 5 years of experience in programming and 3 years of experience in Fullstack Development You can check my projects and have work experience as well.</motion.h3>
 
              <motion.div initial={{opacity:0  ,  x:-50}} whileInView={{opacity:1 , y:0 , x:0}}  className="buttons  flex gap-[10px] flex-wrap justify-center lg:justify-start ">
               <motion.button className='p-[10px] cursor-pointer  rounded-[3px] explore sm:w-[170px]'>Explore</motion.button>
