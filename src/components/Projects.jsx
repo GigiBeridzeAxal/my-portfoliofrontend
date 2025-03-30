@@ -4,6 +4,14 @@ import { Link, Send } from 'lucide-react'
 
 export default function Projects() {
     const projects = [
+      {
+        projectname:'EmailServer',
+        projectimage:'Aicodesnippet.PNG',
+        projectdesc:'This is Ai Integrated Code Snippet Generator',
+        projecturl:'https://ai-code-snippet-frontend.vercel.app/',
+        projecthashdags:["#React", "#NodeJS" , "#MongoDB" , "#ExpressJS" ,  "#NodeMailer"],
+      stack:'Mern Stack'
+    },
         {
             projectname:'EmailServer',
             projectimage:'emailserver1.PNG',
