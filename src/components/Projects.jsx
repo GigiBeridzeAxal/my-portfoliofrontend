@@ -5,7 +5,7 @@ import { Link, Send } from 'lucide-react'
 export default function Projects() {
     const projects = [
       {
-        projectname:'EmailServer',
+        projectname:'SinppetForge',
         projectimage:'Aicodesnippet.PNG',
         projectdesc:'This is Ai Integrated Code Snippet Generator',
         projecturl:'https://ai-code-snippet-frontend.vercel.app/',
