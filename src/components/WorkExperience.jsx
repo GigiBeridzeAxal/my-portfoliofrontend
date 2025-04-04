@@ -7,7 +7,7 @@ export default function WorkExperience() {
         {
             experiencetittle:"Freelancer",
             experiencedesc:"I have a Freelancer account where I am active and have completed projects",
-              img:"space/tauri.svg"
+              img:"Freelancerlogo.jpg"
         },
         {
             experiencetittle:"My Projects",
